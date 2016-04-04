@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+    <string name="nav_now">Now</string>
+    <string name="nav_daily">Daily</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main">Weather Updates</string>
+
+
+    <!-- First time api launch checks -->
+    <string name="now_api_response">Now api</string>
+    <string name="hourly_api_response">Hourly api</string>
+
+    <!-- Location Dialog Buttons Text -->
+    <string name="Cancel">Cancel</string>
+    <string name="Ok">Ok</string>
+    <string name="gps_network_not_enabled">Enable location services ?</string>
+
+    <!-- Shared preferences keys for current weather data  -->
+    <string name="current_city">City</string>
+    <string name="current_main">Main</string>
+    <string name="current_description">Description</string>
+    <string name="current_temp">Temp</string>
+    <string name="current_humidity">Humidity</string>
+    <string name="current_wind_speed">Wind Speed</string>
+    <string name="current_pressure">Pressure</string>
+    <string name="current_temp_max">Temp Max</string>
+    <string name="current_temp_min">Temp Min</string>
+    <string name="current_sun_rise">Sun Rise</string>
+    <string name="current_sun_set">Sun Set</string>
+    <string name="last_api_call">Last Api Call Time</string>
+    <string name="current_icon">Current Weather Icon</string>
+
+    <!-- Action refresh icon -->
+    <string name="action_refresh">Refresh</string>
+</resources>
