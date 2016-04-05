@@ -91,6 +91,8 @@ public class WeatherFragment extends Fragment implements GoogleApiClient.Connect
             isLandscapeMode = false;
         }
 
+        apiCall = new ApiCall(getActivity());
+
         if(hasNowApiHistoryData && hasHourlyApiHistoryData) {
             if (checkTime() && apiCall.canMakeApiCall()) { // time check and internet check and location check
                 api.makeApiCall();
@@ -110,7 +112,7 @@ public class WeatherFragment extends Fragment implements GoogleApiClient.Connect
     public void onResume() {
         super.onResume();
         // on resume
-        apiCall = new ApiCall(getActivity());
+        //apiCall = new ApiCall(getActivity());
 
         if (!hasNowApiHistoryData || !hasHourlyApiHistoryData) { // if no history
             if (!apiCall.isOnline()) {   // internet check
