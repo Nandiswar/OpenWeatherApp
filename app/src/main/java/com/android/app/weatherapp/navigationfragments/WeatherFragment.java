@@ -112,8 +112,6 @@ public class WeatherFragment extends Fragment implements GoogleApiClient.Connect
     public void onResume() {
         super.onResume();
         // on resume
-        //apiCall = new ApiCall(getActivity());
-
         if (!hasNowApiHistoryData || !hasHourlyApiHistoryData) { // if no history
             if (!apiCall.isOnline()) {   // internet check
                 apiCall.showToast("Please enable data connection"); // show toast
