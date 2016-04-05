@@ -65,7 +65,7 @@ public class ReadWriteData {
         Cursor cursor = db.query(CurrentFeedEntry.TABLE_NAME, projection, whereClause, whereArgs, null, null, null);
 
         if(cursor != null) {
-            cursor.moveToFirst();
+            //cursor.moveToFirst();
             while(cursor.moveToNext()) {
                 List item = new List();
                 item.setDt(cursor.getLong(cursor.getColumnIndex(CurrentFeedEntry.COLUMN_NAME_TIME)));
